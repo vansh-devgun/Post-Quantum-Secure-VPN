@@ -1,20 +1,26 @@
-# 🔐 Post-Quantum Cryptography with OpenSSL 3 + OQS Integration
+# 🔐 OpenSSL + liboqs Post-Quantum Cryptography Project
 
-### 🚀 Project Overview
-This project demonstrates how to **build and test OpenSSL 3.0 with the Open Quantum Safe (OQS) provider** to enable **Post-Quantum Cryptography (PQC)** algorithms.  
-The goal is to generate and use **quantum-resistant keys and certificates** locally on a Linux (Kali) system.
-
----
-
-## 🧠 What is Post-Quantum Cryptography (PQC)?
-Post-Quantum Cryptography is designed to protect data against attacks from **quantum computers**.  
-Traditional algorithms like RSA and ECC can be broken by quantum attacks, so PQC introduces new algorithms based on hard mathematical problems such as lattices and hash-based signatures.
+This project integrates **Post-Quantum Cryptography (PQC)** algorithms into **OpenSSL 3** using the **Open Quantum Safe (OQS)** library.  
+The goal is to demonstrate key generation, certificate creation, and signature verification using **post-quantum algorithms** like ML-DSA.
 
 ---
 
-## ⚙️ Project Workflow
+## 🧩 Project Overview
+- Based on OpenSSL 3 integrated with OQS.
+- Uses PQC algorithms such as:
+  - ML-DSA (Dilithium)
+  - ML-KEM (Kyber)
+- Demonstrates hybrid key exchange and signing.
 
-### 1️⃣ Clone and Build Dependencies
-We first installed essential build tools and libraries:
+---
+
+## ⚙️ Setup Steps
+
+### 1️⃣ Clone and Build OQS-OpenSSL
 ```bash
-sudo apt install -y git cmake build-essential ninja-build libssl-dev python3-pip
+git clone https://github.com/open-quantum-safe/oqs-openssl.git
+cd oqs-openssl
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+sudo make install
