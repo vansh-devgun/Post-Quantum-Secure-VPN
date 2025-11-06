@@ -18,7 +18,7 @@ The goal is to demonstrate key generation, certificate creation, and signature v
 
 ### 1️⃣ Clone and Build OQS-OpenSSL
 ```bash
-git clone https://github.com/open-quantum-safe/oqs-openssl.git
+git clone https://github.com/open-quantum-safe/oqs-provider.git
 cd oqs-openssl
 mkdir build && cd build
 cmake ..
