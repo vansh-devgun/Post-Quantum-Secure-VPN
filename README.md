@@ -56,27 +56,27 @@ cd Post-Quantum-Secure-VPN
 
 Run the scripts in order:
 ```bash
-bash scripts/1_generate_ca.sh
-bash scripts/2_generate_server.sh
-bash scripts/3_generate_client.sh
+ scripts/1_generate_ca.sh
+ scripts/2_generate_server.sh
+ scripts/3_generate_client.sh
 ```
 
 Verify certificate details:
 ```bash
-bash scripts/verify_cert.sh
+scripts/verify_cert.sh
 ```
 
 You should see a PQC signature algorithm (e.g., ML-DSA-44) in the output.
 
 3️⃣ Start the PQC TLS Server
 ```bash
-bash tls-server/run_server.sh
+ tls-server/run_server.sh
 ```
 4️⃣ Connect the PQC TLS Client
 
 In a new terminal:
 ```bash
-bash tls-client/run_client.sh
+ tls-client/run_client.sh
 ```
 
 If configured correctly, you’ll see:
