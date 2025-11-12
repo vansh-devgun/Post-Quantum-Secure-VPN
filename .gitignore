@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore private keys and local build dirs
 *.key
 *.pem
@@ -5,3 +6,19 @@
 /pq-test/
 /node_modules/
 .DS_Store
+=======
+# Keys & certs (keep private)
+private-keys/
+certs/*.key
+certs/*.srl
+
+# OS and editor
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
+
+# build files
+build/
+*.o
+>>>>>>> 4cea4a2 (chore: initial repo skeleton and scripts)

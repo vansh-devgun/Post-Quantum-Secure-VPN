@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔐 Post-Quantum Cryptography with OpenSSL + liboqs
 
 This project demonstrates the integration of **Post-Quantum Cryptography (PQC)** algorithms into **OpenSSL 3** using the **Open Quantum Safe (OQS)** provider.  
@@ -165,3 +166,26 @@ NIST PQC Standardization Project
 Vansh Devgun
 Cybersecurity Enthusiast | Exploring Post-Quantum Cryptography
 🔗 GitHub Profile
+=======
+# 🧬 Post-Quantum Secure VPN (PQ-TLS with OpenSSL + liboqs)
+
+This repository demonstrates Post-Quantum TLS using OpenSSL 3 + the OQS provider (ML-DSA / ML-KEM).
+
+## Quick structure
+- scripts/           Automation scripts (generate CA/server/client)
+- certs/             Generated certificates
+- private-keys/      Private keys (should remain secret)
+- tls-server/        Scripts to run server
+- tls-client/        Scripts to run client
+- docs/              Diagrams and notes
+
+## Quick start
+1. Build OpenSSL with liboqs (see docs for instructions)
+2. `bash scripts/1_generate_ca.sh`
+3. `bash scripts/2_generate_server.sh`
+4. `bash scripts/3_generate_client.sh`
+5. `bash tls-server/run_server.sh` (in one terminal)
+6. `bash tls-client/run_client.sh` (in another terminal)
+
+For details and troubleshooting, see the docs folder.
+>>>>>>> 4cea4a2 (chore: initial repo skeleton and scripts)
