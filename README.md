@@ -1,10 +1,10 @@
-🧬 Post-Quantum Secure VPN
-🚀 Overview
+# 🧬 Post-Quantum Secure VPN
+## 🚀 Overview
 
 Post-Quantum Secure VPN is a research and implementation project exploring Post-Quantum Cryptography (PQC) integration into TLS 1.3 using OpenSSL 3.x + OQS (Open Quantum Safe).
 It demonstrates how classical cryptography can be hybridized or replaced with quantum-resistant algorithms such as ML-DSA, ensuring long-term data security against quantum attacks.
 
-### 🔐Project Goals
+## 🔐Project Goals
 
 - Implement a TLS 1.3 handshake secured by post-quantum key exchange and signatures.
 
@@ -39,13 +39,13 @@ Post-Quantum-Secure-VPN/
 ```
 ⚙️ Requirements
 
-Before starting, ensure the following are installed:
-        OpenSSL (with OQS support) → oqsprovider
-        bash, git
+Before starting, ensure the following are installed:\
+- OpenSSL (with OQS support) → oqsprovider
+- Bash
+- Git
+- Linux environment (Ubuntu / Kali recommended)
 
-Linux environment (Ubuntu / Kali recommended)
-
-🏗️ Setup & Usage
+## 🏗️ Setup & Usage
 
 1️⃣ Clone the Repository
 ```bash
@@ -80,9 +80,9 @@ In a new terminal:
 ```
 
 If configured correctly, you’ll see:
-
-    #Starting PQC TLS server on port 4433...
-    #Connecting to PQC TLS server on localhost:4433...
+```
+#Starting PQC TLS server on port 4433...
+#Connecting to PQC TLS server on localhost:4433...
 
 SSL handshake has read XXX bytes and written XXX bytes
 New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
@@ -90,8 +90,9 @@ Server certificate
     Signature Algorithm: ML-DSA-44
     Subject: CN=PostQuantumServer
 Verification: OK
+```
 
-📜Example Output
+## 📜Example Output
 
 ```
 $ openssl x509 -in certs/server.crt -text -noout | head -15
@@ -110,7 +111,7 @@ Certificate:
             Public Key Algorithm: ML-DSA-44
 ```
 
-🧠 What’s Next
+## 🧠 What’s Next
 
     Integrate Hybrid TLS (PQC + Classical)
 
@@ -122,14 +123,12 @@ Certificate:
 
     Dockerize the setup for reproducible testing
 
-🧾 License
+## 🧾 License
 
     This project is licensed under the MIT License
-    .
 
 
-👤 Author
-    Vansh Devgun
-    🔗 GitHub: vansh-devgun
+👤 Author: Vansh Devgun\
+🔗 GitHub: [vansh-devgun](https://github.com/vansh-devgun)
 
 💡 “Building for the quantum era — one secure connection at a time.”
