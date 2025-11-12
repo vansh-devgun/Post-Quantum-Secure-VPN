@@ -32,7 +32,7 @@ Ensure you have the following packages installed:
 ```bash
 sudo apt update
 sudo apt install git cmake build-essential ninja-build libssl-dev python3-pip -y
-
+```
 2️⃣ Clone and Build the OQS Provider
 git clone https://github.com/open-quantum-safe/oqs-provider.git
 cd oqs-provider
