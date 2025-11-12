@@ -93,6 +93,8 @@ Server certificate
 Verification: OK
 
 📜 Example Output
+
+
 $ openssl x509 -in certs/server.crt -text -noout | head -15
 Certificate:
     Data:
@@ -110,24 +112,24 @@ Certificate:
 
 🧠 What’s Next
 
- Integrate Hybrid TLS (PQC + Classical)
+    Integrate Hybrid TLS (PQC + Classical)
 
- Add VPN encapsulation layer (e.g., WireGuard-like tunnel)
+    Add VPN encapsulation layer (e.g., WireGuard-like tunnel)
 
- Implement Post-Quantum Key Exchange (e.g., Kyber)
+    Implement Post-Quantum Key Exchange (e.g., Kyber)
 
- Performance benchmarking for PQC handshakes
+     Performance benchmarking for PQC handshakes
 
- Dockerize the setup for reproducible testing
+    Dockerize the setup for reproducible testing
 
 🧾 License
 
-This project is licensed under the MIT License
-.
+    This project is licensed under the MIT License
+    .
+
 
 👤 Author
-
-Vansh Devgun
-🔗 GitHub: vansh-devgun
+    Vansh Devgun
+    🔗 GitHub: vansh-devgun
 
 💡 “Building for the quantum era — one secure connection at a time.”
