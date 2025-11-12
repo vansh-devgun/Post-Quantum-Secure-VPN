@@ -84,7 +84,7 @@ If configured correctly, you’ll see:
 
 [*] Starting PQC TLS server on port 4433...
 [*] Connecting to PQC TLS server on localhost:4433...
----
+
 SSL handshake has read XXX bytes and written XXX bytes
 New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
 Server certificate
@@ -92,9 +92,9 @@ Server certificate
     Subject: CN=PostQuantumServer
 Verification: OK
 
-📜 Example Output
+📜Example Output
 
-
+```
 $ openssl x509 -in certs/server.crt -text -noout | head -15
 Certificate:
     Data:
@@ -109,6 +109,7 @@ Certificate:
         Subject: CN=PostQuantumServer
         Subject Public Key Info:
             Public Key Algorithm: ML-DSA-44
+```
 
 🧠 What’s Next
 
