@@ -4,17 +4,18 @@
 Post-Quantum Secure VPN is a research and implementation project exploring Post-Quantum Cryptography (PQC) integration into TLS 1.3 using OpenSSL 3.x + OQS (Open Quantum Safe).
 It demonstrates how classical cryptography can be hybridized or replaced with quantum-resistant algorithms such as ML-DSA, ensuring long-term data security against quantum attacks.
 
-🔐 Project Goals
+### 🔐Project Goals
 
-Implement a TLS 1.3 handshake secured by post-quantum key exchange and signatures.
+- Implement a TLS 1.3 handshake secured by post-quantum key exchange and signatures.
 
-Use OpenSSL 3 + liboqs to generate PQC certificates.
+- Use OpenSSL 3 + liboqs to generate PQC certificates.
 
-Build a simple TLS client-server for local testing.
+- Build a simple TLS client-server for local testing.
 
-Lay the foundation for a future PQC-secured VPN.
+- Lay the foundation for a future PQC-secured VPN.
 
-🧩 Repository Structure
+## 🧩 Repository Structure
+```
 Post-Quantum-Secure-VPN/
 │
 ├── certs/                   # Contains CA, server, and client certificates
@@ -35,14 +36,12 @@ Post-Quantum-Secure-VPN/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
+```
 ⚙️ Requirements
 
 Before starting, ensure the following are installed:
-
-OpenSSL (with OQS support) → oqsprovider
-
-bash, git
+        OpenSSL (with OQS support) → oqsprovider
+        bash, git
 
 Linux environment (Ubuntu / Kali recommended)
 
@@ -82,8 +81,8 @@ In a new terminal:
 
 If configured correctly, you’ll see:
 
-[*] Starting PQC TLS server on port 4433...
-[*] Connecting to PQC TLS server on localhost:4433...
+    #Starting PQC TLS server on port 4433...
+    #Connecting to PQC TLS server on localhost:4433...
 
 SSL handshake has read XXX bytes and written XXX bytes
 New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
